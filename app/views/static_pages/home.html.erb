@@ -1,14 +1,182 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<% provide(:title, "Home") %>
 
-  <h2>
-    This is the home page for the
-    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
+<div id="contents">
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <!-- １番目のコンテンツ -->
+  <div class="down-appear-trigger">
+  <div class="normal-area down-appear">
+      <div class="firstblock">
+        <!--<div class="imgR">
+        <%= image_tag "megane.png", alt: "megane" %>-->
+        <h1>PORTFOLIO</h1>
+        <h2>つくるものを通して<br>多くの人のお手伝いがしたい</h2>
+      </div>
+    </div>
+  </div>
+
+   <!-- スクロールダウン -->
+  <div id="scroll_down_start">
+      <a><span></span><p>scroll down</p></a>
+  </div>
+
+
+
+  <!-- ２番目のコンテンツ -->
+  <div class="up-appear-trigger">
+  <div class="non-background-area up-appear">
+    <div class="white-block block2">
+      <div id="scroll_down_end"></div>
+
+      <div class="grid">
+        <article class="main">
+        </article>
+        <section class="side">
+          <ul>
+            <li><!--元介護職からエンジニアへ転職</li>
+            <li>介護業界に約10年勤務</li>
+            <li>身長差１５ｃｍの凸凹夫婦</li>
+            <li>一姫二太郎の２児の父ちゃん</li>
+            <li>オンラインでプログラミング学習</li>
+            <li>未経験でwebエンジニアの世界へ（予定）--></li>
+
+       </section>
+      </div>
+
+      <!-- <div class="imgR">
+        <%= image_tag "megane.png", alt: "megane" %>
+        <h1>About</h1>
+        <h2>介護業界に約10年勤務</h2>
+        <h2>身長差１５ｃｍの凸凹夫婦</h2>
+        <h2>一姫二太郎の２児の父ちゃん</h2>
+        <h2>オンラインでプログラミング学習</h2>
+        <h2>未経験でwebエンジニアの世界へ（予定）</h2>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- ３番目のコンテンツ -->
+  <div class="left-slide-trigger">
+  <div class="normal-area left-slide">
+    <div class="normal-block">
+      <div class="imgL">
+        <%= image_tag "megane.png", alt: "megane" %>
+        <h1>ピコン！<br>とひらめく力！！</h1>
+        <p>楽しくプログラミングする、まったり、ゆっくりな小動物、ハリー教授です！！</p>
+      </div>  
+    </div>
+  </div>
+
+  <!-- ４番目のコンテンツ -->
+  <div class="right-slide-trigger">
+  <div class="normal-area right-slide">
+    <div class="normal-block">
+      <div class="imgL">
+        <%= image_tag "megane.png", alt: "megane" %>
+        <h1>ピコン！<br>とひらめく力！！</h1>
+        <p>楽しくプログラミングする、まったり、ゆっくりな小動物、ハリー教授です！！</p>
+      </div>  
+    </div>
+  </div>
+
+  <!-- 領域全体 -->
+  <section class="non-background-area grid-block">
+
+    <!-- グリッド表示 -->
+    <div class="container grid-container">
+
+      <!-- 記事1 -->
+      <div class="grid-content grid-block-1">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 記事2 -->
+      <div class="grid-content grid-block-2">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+      <!-- 記事3 -->
+      <div class="grid-content grid-block-3">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 記事4 -->
+      <div class="grid-content grid-block-4">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+      <!-- 記事5 -->
+      <div class="grid-content grid-block-5">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 記事6 -->
+      <div class="grid-content grid-block-6">
+        <!-- イメージ -->
+        <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
+          <%= image_tag "harry.png", alt: "Harry" %>
+          <!-- テキスト -->
+          <div class="grid-content-text">
+            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
+            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+          </div>
+        </div>
+      </div>
+      <!-- 以下省略 -->
+    
+  </section>
+
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
+<script>
+  // *================================================
+  // * スクロールダウン
+  // *================================================
+  var position = $("#scroll_down_end").offset().top -100;
+
+  $("#scroll_down_start").click(function(){
+
+    $("html,body").animate({
+        scrollTop : position
+    }, {
+        queue : false
+    });
+  });
+</script>

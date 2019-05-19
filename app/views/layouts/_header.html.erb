@@ -1,12 +1,49 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
+<header style="z-index:1000;">
+
+  <!-- ヘッダー背景 -->
+  <div class="nav-bg"></div>
+
+  <!-- ロゴ -->
+  <div class="logo" style="z-index:9999;">
+    <ul>
+      <li><%= link_to "新米父ちゃん", root_path %></li>
+      <li><%= link_to "介護職からエンジニアへ", root_path %></li>
+    </ul>
+  </div>
+
+  <!-- ヘッダーナビゲーション -->
+  <div id="nav-header">
     <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",    root_path %></li>
-        <li><%= link_to "Help",    help_path %></li>
-        <li><%= link_to "Log in", '#' %></li>
+      <ul>
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "About",   help_path %></li>
+        <li><%= link_to "Brog",   '#' %></li>
+        <li><%= link_to "Contact",   '#' %></li>
+        <!--<li><%= link_to "Contact",   '#' %></li>-->
       </ul>
     </nav>
   </div>
+
+  <!-- ハンバーガーメニューアイコン -->
+  <div id="nav-toggle">
+    <div>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+   <!-- ハンバーガーメニューウインドウ -->
+  <div id="nav-window">
+    <nav>
+      <ul>
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "About",   help_path %></li>
+        <li><%= link_to "Brog",   '#' %></li>
+        <li><%= link_to "Contact",   '#' %></li>
+        <!--<li><%= link_to "Contact",   '#' %></li>-->
+      </ul>
+    </nav>
+  </div>
+
 </header>

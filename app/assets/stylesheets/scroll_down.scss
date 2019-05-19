@@ -1,0 +1,75 @@
+/*================================================
+ *  スクロールダウン
+ ================================================*/
+
+//スクロールダウンという文字のスタイル
+ #scroll_down_start a p {
+  position: absolute;
+  top: 91%;
+  left: 46%;
+  width: auto;
+  height: 40px;
+  font-weight: bold;
+  cursor : pointer;
+}
+
+//マウスアイコンそのもの
+#scroll_down_start a span {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  width: 25px;
+  height: 40px;
+  margin-left: -15px;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor : pointer;
+}
+#scroll_down_start a span::before {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: black;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+  cursor : pointer;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
