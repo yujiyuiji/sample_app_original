@@ -1,0 +1,11 @@
+<% provide(:title, "que1") %>
+<div class="cmind-form">
+
+  <%= form_for(@cmind, url: que2_path, html: {method: 'GET'} ) do |f| %>
+    <h2>今の「わたし、おれ、ぼく」</h2>
+    <h2>つまりあなた自身の姿は、どのように見えますか？</h2>
+    <%= f.text_area :que1 %>
+    <%= f.submit "次へ" %>
+  <% end %>
+
+</div>

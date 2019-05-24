@@ -1,0 +1,17 @@
+<% provide(:title, "Top") %>
+<div class="cmind-form">
+
+  <%= form_for(@cmind, url: que1_path, html: {method: 'GET'} ) do |f| %>
+    <h1>Changing the Mind</h1>
+    <h2>一秒先の「今」へ踏み出そう</h2>
+    <%= f.submit "スタート" %>
+  <% end %>
+
+</div>
+
+<script>
+  // 背景色変更
+  $(function() {
+    $('body').addClass('bg-cmind-top');
+  });
+</script>

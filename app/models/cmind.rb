@@ -1,0 +1,2 @@
+class Cmind < ApplicationRecord
+end

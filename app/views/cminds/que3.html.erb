@@ -1,0 +1,22 @@
+<% provide(:title, "que3") %>
+
+<div class="cmind-form">
+  <%= form_for(@cmind, url: result_path, html: {method: 'GET'} ) do |f| %>
+
+    <h2>一秒前のご自身より</h2>
+    <h2>「今のあなた」は、前向きになれましたか？</h2>
+
+    <%= hidden_field_tag :que1, @cmind.que1 %>
+    <%= hidden_field_tag :que2, @cmind.que2 %>
+    <%= hidden_field_tag :que4, @cmind.que4 %>
+
+    <%= f.text_area :que3 %>
+
+    <ul class="btn-box">
+      <li ><%= f.submit "はい！！" %></li>
+      <li ><%= f.submit "いや、まだ・・・", name: "no_ans" %></li>
+      <li ><%= f.submit "いいえ！", name: "no_ans" %></li>
+    </ul>
+  <% end %>
+
+</div>

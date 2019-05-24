@@ -1,0 +1,23 @@
+<% provide(:title, "result") %>
+<div class="cmind-form">
+
+  <%= form_for(@cmind, url: cmind_path, html: {method: 'GET'} ) do |f| %>
+    <h2>あなたの「今」</h2>
+    <h2>すごくいいです(＾◇＾)！！</h2>
+    <h2>今の気持ちをみんなで共有しましょう♪</h2>
+
+    <h3><%= @cmind.que1 %>
+    <h3><%= @cmind.que2 %>
+    <h3><%= @cmind.que4 %>
+    <h3><%= @cmind.que3 %>
+
+    <ul class="btn-box">
+      <li><%= link_to 'Twitter', "https://twitter.com/share?url=#{request.url}&text=#{@cmind.que1}#{@cmind.que2}#{@cmind.que4}#{@cmind.que3}", class: 'twitter', title: 'Twitter', target: '_blank' %></li>
+      <li><%= link_to 'Facebook', "https://www.facebook.com/sharer/sharer.php?u=#{request.url}&text=#{@cmind.que1}#{@cmind.que2}#{@cmind.que4}#{@cmind.que3}", class: 'facebook', title: 'Facebook', target: '_blank' %></li>
+    </ul>
+
+    <%= f.submit "TOPへ戻る" %>
+
+  <% end %>
+
+</div>

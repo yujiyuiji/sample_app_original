@@ -1,0 +1,15 @@
+<% provide(:title, "que4") %>
+<div class="cmind-form">
+
+  <%= form_for(@cmind, url: que3_path, html: {method: 'GET'} ) do |f| %>
+    <h2 style="margin-bottom: 225px;">今からできることはなんですか？</h2>
+
+    <%= hidden_field_tag :que1, @cmind.que1 %>
+    <%= hidden_field_tag :que2, @cmind.que2 %>
+    <%= hidden_field_tag :que3, @cmind.que3 %>
+
+    <%= f.text_area :que4 %>
+    <%= f.submit "次へ" %>
+  <% end %>
+
+</div>

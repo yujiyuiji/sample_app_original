@@ -1,0 +1,173 @@
+@import "./custom.scss";
+
+/*================================================
+ *  C-Mind用のフォーム
+ ================================================*/
+
+ // フォーム全体
+ .cmind-form {
+  position: relative;
+  width: auto;
+  margin: 100px 0 32px 0;
+
+  // フォーム内のh1タグ
+  h1 {
+    margin: 32px 0 128px 0;
+    font-size: calc(500% + 0.8vw);
+    letter-spacing: 5px;
+  }
+
+  // フォーム内のh2タグ
+  h2 {
+    margin: 32px 0 90px 0;
+    font-size: calc(150% + 0.8vw);
+    letter-spacing: 3px;
+  }
+
+  // フォーム内のラベル（今回は出番なし）
+  label {
+    margin-top:10px;
+    margin-left:10px;
+    font-size: calc(80% + 0.5vw);
+    color: black;
+  }
+
+  // フォーム内の入力フォーム（今回は出番なし）
+  input {
+    width: 100%;
+    height: 40px;
+    font-size: calc(50% + 0.6vw);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2.5px;
+    margin: 4px 0;
+    padding-left: 20px;
+    border: 2px solid $my-color3;
+    border-radius: 32px;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border-color: #da3c41;
+  }
+
+  // フォーム内のテキストエリア
+  textarea {
+    width: 60%;
+    height: 100px;
+    margin: -30px 20% 40px 20%;
+    padding: 20px;
+    font-size: calc(50% + 0.6vw);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2.5px;
+    border: 4px solid $my-color3;
+    border-radius: 32px;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  // フォーム内のボタン
+  input[type=submit] {
+    width: 20%;
+    height: 64px;
+    margin: 40px 40%;
+    font-size: calc(100% + 0.5vw);
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: $my-color3;
+    border: 4px solid $my-color3;
+    background-color: white;
+    transition: .4s;
+  }
+
+  input[type=submit]:hover {
+    font-size: calc(100% + 0.4vw);
+    color: white;
+    background-color: $my-color3;
+  }
+
+  // ボタンを横並びに配置
+  .btn-box {
+    margin: 6rem;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    li input[type=submit] {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  // Facebookボタン
+  .facebook {
+    background-color: #2e4a88;
+    font-family: Arial;
+    font-size: calc(70% + 0.4vw);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 32px;
+    padding: 14px 80px;
+  }
+  .facebook:active {
+    top: 2px;
+      box-shadow: 0 2px 0 #1B3D82;
+  }
+  .facebook:hover {
+    background-color: #354F84;
+  }
+
+  // Twitterボタン
+  .twitter {
+    background-color: #008DDE;
+    font-family: Arial;
+    font-size: calc(70% + 0.4vw);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 32px;
+    padding: 14px 80px;
+  }
+  .twitter:active {
+    top: 2px;
+      box-shadow: 0 2px 0 #0078BD;
+  }
+  .twitter:hover {
+    background-color: #1397D8;
+  }
+}
+
+/*================================================
+ *  ページごとに背景色を変更するクラス
+ ================================================*/
+
+ .bg-cmind-top {
+  background: orange image-url("") fixed  0 0;
+}
+
+.bg-cmind-que1 {
+  background: white image-url("") fixed  0 0;
+}
+
+.bg-cmind-que2 {
+  background: rgb(0, 146, 231) image-url("") fixed  0 0;
+}
+
+.bg-cmind-que3 {
+  background: yellow image-url("") fixed  0 0;
+}
+
+.bg-cmind-que4 {
+  background: rgb(0, 146, 231) image-url("") fixed  0 0;
+}
+
+.bg-cmind-result {
+  background: orange image-url("") fixed  0 0;
+}
