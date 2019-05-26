@@ -6,6 +6,7 @@
   <div class="down-appear-trigger">
   <div class="normal-area down-appear">
       <div class="firstblock">
+        <div class="bg1">
         <!--<div class="imgR">
         <%= image_tag "megane.png", alt: "megane" %>-->
         <h1>PORTFOLIO</h1>
@@ -32,14 +33,15 @@
         </article>
         <section class="side">
           <ul>
-            <h1>About</h1>
-        <!--<li>元介護職からエンジニアへ転職</li>
-            <li>介護業界に約10年勤務</li>
-            <li>身長差１５ｃｍの凸凹夫婦</li>
-            <li>一姫二太郎の２児の父ちゃん</li>
-            <li>オンラインでプログラミング学習</li>
-            <li>未経験でwebエンジニアの世界へ（予定）--></li>
-
+            <h2>About</h2>
+            <li>１９８７年１２月１６日生まれ</li>
+            <li>介護業界に１０年勤める</li>
+            <li>素敵な奥さんと結婚して、子ども２人授かる</li>
+            <li>エンジニアという仕事に出会う</li>
+            <li>家族との時間、お金、今の抱えている閉塞感</li>
+            <li>エンジニアになれば、全て叶えられる</li>
+            <li>30代転職</li>
+            <li>決死の覚悟で取り組みます！</li>
        </section>
       </div>
 
@@ -66,11 +68,11 @@
       <div class="grid-content grid-block-1">
         <!-- イメージ -->
         <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
-          <%= image_tag "harry.png", alt: "Harry" %>
+          <%= image_tag "mind.jpg", alt: "Harry" %>
           <!-- テキスト -->
           <div class="grid-content-text">
-            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
-            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+            <h3><%= "changing the mind".truncate(20) %></h3>
+            <p><span><%= "自分自身の問いかけでポジティブな思考へ".truncate(32) %></span></p>
           </div>
         </div>
       </div>
@@ -79,11 +81,11 @@
       <div class="grid-content grid-block-2">
         <!-- イメージ -->
         <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
-          <%= image_tag "harry.png", alt: "Harry" %>
+          <%= image_tag "climd.jpg", alt: "Harry" %>
           <!-- テキスト -->
           <div class="grid-content-text">
-            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
-            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+            <h3><%= "railsチュートリアル完走".truncate(20) %></h3>
+            <p><span><%= "Coming Soon".truncate(32) %></span></p>
           </div>
         </div>
       </div>
@@ -91,11 +93,11 @@
       <div class="grid-content grid-block-3">
         <!-- イメージ -->
         <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
-          <%= image_tag "harry.png", alt: "Harry" %>
+          <%= image_tag "parenting.jpg", alt: "Harry" %>
           <!-- テキスト -->
           <div class="grid-content-text">
-            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
-            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+            <h3><%= "新米父ちゃん子育て論".truncate(13) %></h3>
+            <p><span><%= "Coming Soon".truncate(32) %></span></p>
           </div>
         </div>
       </div>
@@ -104,11 +106,11 @@
       <div class="grid-content grid-block-4">
         <!-- イメージ -->
         <div class="grid-content-image hover:shadow-raised hover:translateY-2px transition">
-          <%= image_tag "harry.png", alt: "Harry" %>
+          <%= image_tag "change.jpg", alt: "Harry" %>
           <!-- テキスト -->
           <div class="grid-content-text">
-            <h3><%= "ハリー教授のちくっと講座".truncate(13) %></h3>
-            <p><span><%= "パワーポイントを使った１分ミニミニプログラミング動画".truncate(32) %></span></p>
+            <h3><%= "転職活動について".truncate(13) %></h3>
+            <p><span><%= "Coming Soon".truncate(32) %></span></p>
           </div>
         </div>
       </div>
@@ -120,16 +122,19 @@
     <!-- ３番目のコンテンツ -->
   <div class="left-slide-trigger">
   <div class="normal-area left-slide">
-    <div class="normal-block">
+    <div class="white-block block2">
       <div class="imgL">
         <%= image_tag "megane.png", alt: "megane" %>
-        <h1>ピコン！<br>とひらめく力！！</h1>
-        <p>楽しくプログラミングする、まったり、ゆっくりな小動物、ハリー教授です！！</p>
+        <h1>contact</h1>
+        <p>自分の日々の行動をツイートしていますので<br>良ければ見てください</p>
+        <ul>
+          <li><%= link_to image_tag("twitter_icon.png", alt: "Twitter-Icon"), "#" %></li>
+        </ul>
       </div>  
     </div>
   </div>
 
-  <!-- ４番目のコンテンツ -->
+  <!-- ４番目のコンテンツ 
   <div class="right-slide-trigger">
   <div class="normal-area right-slide">
     <div class="normal-block">
@@ -139,7 +144,7 @@
         <p>楽しくプログラミングする、まったり、ゆっくりな小動物、ハリー教授です！！</p>
       </div>  
     </div>
-  </div>
+  </div>-->
 
 </div>
 

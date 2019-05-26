@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<div class="blog_header">
+
+  <h1>BLOG一覧</h1>
+
+  <div class="blog_header_content">
+    <!-- ブログヘッダー -->
+    <h3>投稿数 <%= @blogs.count %></h3>
+    <!-- 新規作成ボタン -->
+    <div class="blog_create blog_btn">
+      <%= link_to '新規作成', new_blog_path %>
+    </div>
+  </div>
+
+</div>
+
+<!-- ブログ記事一覧 -->
+<div class="blogs">
+
+  <% @blogs.each do |blog| %>
+
+    <li>
+      <div class="col-md-10">
+        <!-- タイトル・ボディ -->
+        <span class="blog_title"><%= blog.title %></span>
+        <span class="blog_body"><%= blog.body %></span>
+      </div>
+      <div class="col-md-2">
+        <!-- 詳細ボタン -->
+        <div class="blog_show blog_btn">
+          <%= link_to "詳 細", blog_path(blog) %>
+        </div>
+      </div>
+    </li>
+
+  <% end %>
+
+</div>

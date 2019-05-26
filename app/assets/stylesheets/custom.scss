@@ -4,8 +4,8 @@
 
 //自サイト用の専用配色
 $my-color1: #ffee8e;
-$my-color2: #fff06d;
-$my-color3: #faaa20;
+$my-color2: #B4E1FF;
+$my-color3: #FF9A08;
 
 
 /*================================================
@@ -237,43 +237,48 @@ padding: 20px;
 
 /* 背景が白いブロック */
 .white-block {
-  margin: 50px;
-  padding: 50px;
+  margin: 30px;
+  padding: 30px;
   border-radius: 10px;
-background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 .firstblock {
   height: 500px; 
-  margin-top: 50px;
-  padding-top: 10px;
-  width:100%;
-  background-image: image-url("home.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-h1{
-  padding-top: 60px;
-  letter-spacing: 5px;
+  .bg1{
+    padding: 50 0 60 0px;
+    height: 550px; 
+    background-image: image-url("mainbg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  h1{
+    padding-top: 10px;
+    letter-spacing: 5px;
   }
 }
 
 .grid {
-  display: grid;
+  display: flex;
   gap: 10px;
   grid-template-columns: 2fr 1fr;
-  height: 500px; 
+  height: 470px; 
+  width: 100%;
 }
 .main {
   background-image: image-url("about.jpg");
-  padding: 50px;
+  padding:20px;
   background-size: cover;
+  width: 70%;
+  height: 100%;
 }
 .side {
   background:$my-color2;
+  width: 30%;
+  height: 100%;
   ul{
-    padding: 50px;
     li{
       color: black;
       letter-spacing: 2px;
@@ -282,9 +287,6 @@ h1{
       &:hover {
         color: $my-color3;
       }
-
-
-
     }
   }
 }
